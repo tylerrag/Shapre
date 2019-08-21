@@ -11,8 +11,8 @@
     <string name="start">Start</string>
     <string name="shaprelogo">shaprelogo</string>
     <string name="welcome">"Welcome !"</string>
-    <string name="getPDF"
+    <string name="getPDF" >"Get PDF" </string>
     <string name="title_activity_nbmenu">notitle</string>
     <string name="browse">BROWSE</string>
     <string name="BROWSE">BROWSE</string>
-</string></resources>
+</resources>

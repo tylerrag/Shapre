@@ -16,7 +16,7 @@ public class UploadActivty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upload);
 
-        Button button = findViewById(R.id.browse);
+        Button button = findViewById(R.id.browse_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
