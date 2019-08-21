@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tyler Sharpe Frontend</string>
+    <string name="Sendtxt">Send Text</string>
+    <string name="enter_text">Enter text</string>
+    <string name="end">END</string>
+    <string name="upload">UPLOAD</string>
+    <string name="real_time_chat">REAL-TIME CHAT</string>
+    <string name="test">test?</string>
+    <string name="button">Button</string>
+    <string name="join">Join</string>
+    <string name="start">Start</string>
+    <string name="shaprelogo">shaprelogo</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="getPDF"
+    <string name="title_activity_nbmenu">notitle</string>
+    <string name="browse">BROWSE</string>
+    <string name="BROWSE">BROWSE</string>
+</string></resources>

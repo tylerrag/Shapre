@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PresenterActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="800dp"
+
+        android:layout_height="0dp"
+        android:background="#FFC4D8"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toTopOf="@+id/Chat_Label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/Chat_Label"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#2B2B2B"
+        android:clickable="false"
+        android:gravity="left|center_vertical"
+        android:paddingStart="75dp"
+        android:text="@string/real_time_chat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/end"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#40D54773"
+        android:text="@string/end"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        style="@android:style/Widget.ScrollView"
+        android:layout_width="800dp"
+        android:layout_height="700dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
