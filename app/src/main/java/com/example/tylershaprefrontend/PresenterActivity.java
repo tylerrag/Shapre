@@ -16,8 +16,8 @@ public class PresenterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.presenter);
 
-        Button button = findViewById(R.id.end);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button end_button = findViewById(R.id.end);
+        end_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openLandingActivity();

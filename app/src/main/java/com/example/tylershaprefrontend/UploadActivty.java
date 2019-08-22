@@ -16,18 +16,21 @@ public class UploadActivty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upload);
 
-        Button button = findViewById(R.id.browse_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button browse_button = findViewById(R.id.browse_button);
+        browse_button.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view) {
-                chooseFile();
+                Intent intent = new Intent();
+                intent.setType("application/pdf");
+                intent.setAction(intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent,"Select Presentation"),1);
+
             }
         });
-    }
 
-    private void chooseFile( ) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
     }
 }
+
+
 
